@@ -1,0 +1,12 @@
+
+
+body{
+  background-image: url(./components/bg4.jfif);
+}
+
+.horizontal{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+

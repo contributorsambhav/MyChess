@@ -1,0 +1,43 @@
+.chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 5vw);
+    grid-template-rows: repeat(8, 5vw);
+    width: fit-content;
+    border: 1px solid black;
+    
+  }
+  
+  .square {
+    width: 5vw;
+    height: 5vw;
+  }
+  
+  .dark {
+    background-color: #5c2020; /* Dark square color */
+    color:rgb(255, 255, 255);
+    font-size:1vw;
+  }
+  
+  .light {
+    background-color: #ffffff; /* Light square color */
+    color:#3a3131;
+    font-size:1vw;
+  }
+  
+  .ChessBox{
+    margin: auto; 
+    margin-top: 0px;
+    
+   
+    width : 56vw;
+    background-image: url(./bg.jfif);
+    padding-right: 1vw;
+    padding-left: 3vw;
+    margin-top: 4px;
+    padding-top: 0.6vh;
+   
+    
+  
+      
+
+  }

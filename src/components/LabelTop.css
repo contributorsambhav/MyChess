@@ -1,0 +1,17 @@
+/* Updated styles for a horizontal grid */
+.row-container {
+    display: flex;
+    margin-left: 4.4vw;
+    margin-top: 0vh;
+
+    
+     /* Optional gap between grid items */
+  }
+  
+  /* Style for each grid item (optional) */
+  .row-item {
+    text-align: center;
+    width : 5.1vw;
+    font-size: 2vw;
+  }
+  

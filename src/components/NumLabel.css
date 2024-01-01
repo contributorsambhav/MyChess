@@ -1,0 +1,18 @@
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    
+     
+  }
+  
+  /* Style for each grid item (optional) */
+  .column-item {
+    text-align:end;
+    height :4.8vw;
+    font-size: 2vw;
+    width: 2vw;
+    padding-left: 2vw;
+    padding-right: 2.5vw;
+  }
+  
