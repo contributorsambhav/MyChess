@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ChessBoard.css';
 import ChessPiece from './chessPiece';
 
 const ChessBoard = () => {
+  const [selectedPiece, setSelectedPiece] = useState(null); // State to track selected piece
+
+  // Function to handle piece selection
+  const handlePieceSelect = (piece) => {
+    // Logic to handle piece selection
+    console.log(`Piece selected: ${piece}`);
+    // Update state to reflect selected piece
+    setSelectedPiece(piece);
+  };
+
   // Function to generate the chess board squares
   const renderSquares = () => {
     const squares = [];
@@ -30,6 +40,7 @@ const ChessBoard = () => {
           <div
             key={`${row}-${col}`}
             className={`square ${squareColor}`}
+            onClick={() => piece && handlePieceSelect(piece)} // Handle click event for piece selection
           >
             {piece && (
               <ChessPiece
@@ -48,6 +59,7 @@ const ChessBoard = () => {
   return (
     <div className="chess-board">
       {renderSquares()}
+      {selectedPiece && <p>Selected piece: {selectedPiece}</p>} {/* Display selected piece */}
     </div>
   );
 };

@@ -5,7 +5,6 @@ import LabelTop from "./components/LabelTop";
 import NumLabel from "./components/NumLabel";
 
 import React, { Component } from "react";
-import ChessPiece from "./components/chessPiece";
 //news api key 06454ab3934b4aea83409ae14d4825ba
 
 export default class App extends Component {
@@ -26,9 +25,7 @@ export default class App extends Component {
           </div>
           <LabelTop></LabelTop>
         </div>
-        <div className="chess-piece">
-        <ChessPiece pieceType={"K"} color={"white"} />
-        </div>
+        
       </>
     );
   }
